@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="ParcelCreator">
+        <ignore path="src/com/ruixinyuan/producttrainingfinal/bean/ProductInfoBean.java" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/ruixinyuan/producttrainingfinal/db/DBUtils.java" />
+    </issue>
+    <issue id="ShowToast">
+        <ignore path="src/com/ruixinyuan/producttrainingfinal/TabActivityFour.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/ruixinyuan/producttrainingfinal/utils/download/FileService.java" />
+    </issue>
+</lint>

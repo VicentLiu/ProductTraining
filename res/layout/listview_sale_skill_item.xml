@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/item_tv_production_name_sale_skill"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignTop="@+id/item_imageview_title_sale_skill"
+            android:layout_toRightOf="@+id/item_imageview_title_sale_skill"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/item_tv_production_intro_sale_skill"
+            style="@style/TextView.commonColor"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@+id/item_imageview_title_sale_skill"
+            android:layout_below="@+id/item_tv_production_name_sale_skill"
+            android:layout_toRightOf="@+id/item_imageview_title_sale_skill"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/item_prodution_default_intro"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/item_imageview_title_sale_skill"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/sale_skill_default"
+            android:contentDescription="@string/item_img_title" />
+
+        <TextView
+            android:id="@+id/textViewNone"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignLeft="@+id/item_imageview_title_sale_skill"
+            android:layout_below="@+id/item_tv_production_intro_sale_skill"/>
+
+</RelativeLayout>

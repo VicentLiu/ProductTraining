@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textview_login_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="216dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview_login_user_name"
+        android:layout_alignBottom="@+id/textview_login_user_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:ems="10"
+        android:inputType="none" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textview_login_user_name"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_marginTop="34dp"
+        android:textColor="@android:color/black"
+        android:text="@string/password"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:text="@string/confirm" />
+
+    <Button
+        android:id="@+id/buttonConcel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonConfirm"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/buttonConfirm"
+        android:text="@string/concel" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPassword"
+        android:layout_alignBottom="@+id/textViewPassword"
+        android:layout_alignLeft="@+id/editTextUserName"
+        android:layout_alignRight="@+id/editTextUserName"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+</RelativeLayout>
